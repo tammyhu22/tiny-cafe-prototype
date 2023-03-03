@@ -167,8 +167,8 @@ window.OverworldMaps = {
                     {
                         events: [
                             {type: "textMessage", text: "Manager: If you have any questions,", faceHero:"npcC"},
-                            {type: "textMessage", text: "don't ask me."},
-                            {type: "textMessage", text: "I'm too busy wiping these tables", faceHero:"npcC"},
+                            {type: "textMessage", text: "just don't ask me"},
+                            {type: "textMessage", text: "I'm too busy wiping these tables, haha", faceHero:"npcC"},
                             {who: "hero", type: "walk", direction: "up"},
                             {who: "npcC", type: "stand", direction: "down"},
                         ]
