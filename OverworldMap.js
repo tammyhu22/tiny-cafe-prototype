@@ -106,8 +106,8 @@ class OverworldMap {
 
 window.OverworldMaps = {
     Cafe: {
-        lowerSrc: "/images/mapLower.png",
-        upperSrc:"/images/mapUpper.png",
+        lowerSrc: "./images/mapLower.png",
+        upperSrc:"./images/mapUpper.png",
         gameObjects: {
             hero: new Person({
                 isPlayerControlled: true,
@@ -117,7 +117,7 @@ window.OverworldMaps = {
             npcA: new Person({
                 x: utils.withGrid(10),
                 y: utils.withGrid(8),
-                src: "/images/npc1.png",
+                src: "./images/npc1.png",
                 behaviorLoop: [
                     { type: "stand", direction: "left", time: 800 }, //looking left
                     { type: "stand", direction: "up", time: 800 },
@@ -137,7 +137,7 @@ window.OverworldMaps = {
             npcB: new Person({
                 x: utils.withGrid(10),
                 y: utils.withGrid(3),
-                src: "/images/npc3.png",
+                src: "./images/npc3.png",
                 behaviorLoop: [ // idle behavior loop
                     { type: "walk", direction: "left" },
                     { type: "stand", direction: "up", time: 800 },
@@ -149,7 +149,7 @@ window.OverworldMaps = {
             npcC: new Person({
                 x: utils.withGrid(2),
                 y: utils.withGrid(7),
-                src: "/images/erio.png",
+                src: "./images/erio.png",
                 behaviorLoop: [ // idle behavior loop
                     { type: "stand", direction: "left" },
                 ]
@@ -283,26 +283,6 @@ window.OverworldMaps = {
                     ]
                 }
             ]
-        }
-    },
-    Cafe2: {
-        lowerSrc: "/images/mapLower.png",
-        upperSrc:"/images/mapUpper.png",
-        gameObjects: {
-            hero: new GameObject({
-                x: 3,
-                y: 6,
-            }),
-            npc1: new GameObject({
-                x: 9,
-                y: 7,
-                src: "/images/npc1.png"
-            }),
-            npc2: new GameObject({
-                x: 9,
-                y: 7,
-                src: "/images/npc3.png"
-            })
         }
     },
 }
