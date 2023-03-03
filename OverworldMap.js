@@ -127,7 +127,7 @@ window.OverworldMaps = {
                 talking: [
                     {
                         events: [
-                            {type: "textMessage", text: "can I help you?", faceHero:"npcA"},
+                            {type: "textMessage", text: "Kelly: can I help you?", faceHero:"npcA"},
                             {type: "textMessage", text: "I'm busy"},
                             {who: "hero", type: "walk", direction: "up"},
                         ]
@@ -144,6 +144,16 @@ window.OverworldMaps = {
                     { type: "walk", direction: "down" },
                     { type: "walk", direction: "right" }, 
                     { type: "walk", direction: "up" },
+                ],
+                talking: [
+                    {
+                        events: [
+                            {type: "textMessage", text: "You: Hey, sorry to bother you,", faceHero:"npcB"},
+                            {type: "textMessage", text: "May I ask what you ordered?"},
+                            {type: "textMessage", text: "Eric: Uh..one of your lattes and cake I think."},
+                            {type: "textMessage", text: "You: Ok thanks!"},
+                        ]
+                    },
                 ]
             }),
             npcC: new Person({
@@ -152,6 +162,17 @@ window.OverworldMaps = {
                 src: "./images/erio.png",
                 behaviorLoop: [ // idle behavior loop
                     { type: "stand", direction: "left" },
+                ],
+                talking: [
+                    {
+                        events: [
+                            {type: "textMessage", text: "Manager: If you have any questions,", faceHero:"npcC"},
+                            {type: "textMessage", text: "don't ask me."},
+                            {type: "textMessage", text: "I'm too busy wiping these tables", faceHero:"npcC"},
+                            {who: "hero", type: "walk", direction: "up"},
+                            {who: "npcC", type: "stand", direction: "down"},
+                        ]
+                    },
                 ]
             }),
         },
